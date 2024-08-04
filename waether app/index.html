@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wether app</title>
+</head>
+
+<body id="user_homeui">
+    <div id="main_ui">
+        <div id="sec1">
+            <div id="search_weather">
+                <input type="text" placeholder="Search City Weather" required id="input_city">
+                <a id="search_query_runner">Search</a>
+            </div>
+            <div id="weather_location">
+                <p id="location"></p><p id="country"></p>
+                <p id="date"></p>
+            </div>
+            <div id="temp_today">
+                <p id="temp_value">32</p>
+                <p><sup id="clesius">o</sup>C</p>
+            </div>
+            <p id="desc">Sunny</p>
+            <img src="icons/01d.svg" id="icons_main">
+        </div>
+        <div id="sec2">
+            <h1 id="head_deatils">Today's Weather Deatils</h1>
+            <div id="deatails_today">
+                <div class="card">
+                    <div class="desc_properties">
+                        <p class="desc_sub">Minimum Tempreature</p>
+                        <div class="sup_temp_user">
+                            <p id="temp_min" class="desc_sub">34</p><sup class="sup_temp">oC</sup>
+                        </div>
+                    </div>
+                    <img src="icons/temp_min.svg" class="card_logo">
+                </div>
+
+                <div class="card">
+                    <div class="desc_properties">
+                        <p class="desc_sub">Maximum Tempreature</p>
+                        <div class="sup_temp_user">
+                            <p id="temp_max" class="desc_sub">34</p><sup class="sup_temp">oC</sup>
+                        </div>
+                    </div>
+                    <img src="icons/temp_max.svg" class="card_logo">
+                </div>
+
+                <div class="card">
+                    <div class="desc_properties">
+
+                        <p class="desc_sub">Humidity</p>
+                        <div class="sup_temp_user">
+                            <p id="humidity" class="desc_sub">34</p><sup class="sup_temp">%</sup>
+                        </div>
+                    </div>
+                    <img src="icons/humidity.svg" class="card_logo">
+                </div>
+
+                <div class="card">
+                    <div class="desc_properties">
+                        <p class="desc_sub">Wind Speed</p>
+                        <div class="sup_temp_user">
+                            <p id="wind" class="desc_sub">34</p><sup class="sup_temp">kmph</sup>
+                        </div>
+                    </div>
+                    <img src="icons/wind.svg" class="card_logo">
+                </div>
+
+
+                <div class="card">
+                    <div class="desc_properties">
+                        <p class="desc_sub">Sun Set</p>
+                            <p id="sun_set" class="desc_sub">34</p>
+                    </div>
+                    <img src="icons/sun_set.svg" class="card_logo">
+                </div>
+
+                <div class="card">
+                    <div class="desc_properties">
+                        <p class="desc_sub">Sun Rise</p>
+                            <p id="sun_rise" class="desc_sub">34</p>
+                    </div>
+                    <img src="icons/sun_rise.svg" class="card_logo">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

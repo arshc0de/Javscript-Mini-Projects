@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="user_ui_header">Currency Converter</h1>
+    <div id="main_ui">
+    <div id="currencuy_ui">
+        <label for="country-currency">Select a country and its currency code:</label>
+        <select id="country-currency">
+            <option class="country_options" value="">-- Select --</option>
+            <option class="country_options" value="ADA">Ada - ADA (Azerbaijan)</option>
+            <option class="country_options" value="AED">United Arab Emirates Dirham - AED (United Arab Emirates)</option>
+            <option class="country_options" value="AFN">Afghan Afghani - AFN (Afghanistan)</option>
+            <option class="country_options" value="ALL">Albanian Lek - ALL (Albania)</option>
+            <option class="country_options" value="AMD">Armenian Dram - AMD (Armenia)</option>
+            <option class="country_options" value="ANG">Netherlands Antillean Guilder - ANG (Netherlands Antilles)</option>
+            <option class="country_options" value="AOA">Angolan Kwanza - AOA (Angola)</option>
+            <option class="country_options" value="ARB">Argentine Peso - ARB (Argentina)</option>
+            <option class="country_options" value="ARS">Argentine Peso - ARS (Argentina)</option>
+            <option class="country_options" value="AUD">Australian Dollar - AUD (Australia)</option>
+            <option class="country_options" value="AVAX">AVAX - AVAX (International)</option>
+            <option class="country_options" value="AWG">Aruban Florin - AWG (Aruba)</option>
+            <option class="country_options" value="AZN">Azerbaijani Manat - AZN (Azerbaijan)</option>
+            <option class="country_options" value="BAM">Bosnia and Herzegovina Convertible Mark - BAM (Bosnia and Herzegovina)</option>
+            <option class="country_options" value="BBD">Barbadian Dollar - BBD (Barbados)</option>
+            <option class="country_options" value="BDT">Bangladeshi Taka - BDT (Bangladesh)</option>
+            <option class="country_options" value="BGN">Bulgarian Lev - BGN (Bulgaria)</option>
+            <option class="country_options" value="BHD">Bahraini Dinar - BHD (Bahrain)</option>
+            <option class="country_options" value="BIF">Burundian Franc - BIF (Burundi)</option>
+            <option class="country_options" value="BMD">Bermudan Dollar - BMD (Bermuda)</option>
+            <option class="country_options" value="BNB">BNB - BNB (International)</option>
+            <option class="country_options" value="BND">Brunei Dollar - BND (Brunei)</option>
+            <option class="country_options" value="BOB">Bolivian Boliviano - BOB (Bolivia)</option>
+            <option class="country_options" value="BRL">Brazilian Real - BRL (Brazil)</option>
+            <option class="country_options" value="BSD">Bahamian Dollar - BSD (Bahamas)</option>
+            <option class="country_options" value="BTC">Bitcoin - BTC (International)</option>
+            <option class="country_options" value="BTN">Bhutanese Ngultrum - BTN (Bhutan)</option>
+            <option class="country_options" value="BWP">Botswanan Pula - BWP (Botswana)</option>
+            <option class="country_options" value="BYN">Belarusian Ruble - BYN (Belarus)</option>
+            <option class="country_options" value="BYR">Belarusian Ruble - BYR (Belarus)</option>
+            <option class="country_options" value="BZD">Belize Dollar - BZD (Belize)</option>
+            <option class="country_options" value="CAD">Canadian Dollar - CAD (Canada)</option>
+            <option class="country_options" value="CDF">Congolese Franc - CDF (Democratic Republic of the Congo)</option>
+            <option class="country_options" value="CHF">Swiss Franc - CHF (Switzerland)</option>
+            <option class="country_options" value="CLF">Chilean Unit of Account UF - CLF (Chile)</option>
+            <option class="country_options" value="CLP">Chilean Peso - CLP (Chile)</option>
+            <option class="country_options" value="CNY">Chinese Yuan - CNY (China)</option>
+            <option class="country_options" value="COP">Colombian Peso - COP (Colombia)</option>
+            <option class="country_options" value="CRC">Costa Rican Colon - CRC (Costa Rica)</option>
+            <option class="country_options" value="CUC">Cuban Convertible Peso - CUC (Cuba)</option>
+            <option class="country_options" value="CUP">Cuban Peso - CUP (Cuba)</option>
+            <option class="country_options" value="CVE">Cape Verdean Escudo - CVE (Cape Verde)</option>
+            <option class="country_options" value="CZK">Czech Koruna - CZK (Czech Republic)</option>
+            <option class="country_options" value="DAI">DAI - DAI (International)</option>
+            <option class="country_options" value="DJF">Djiboutian Franc - DJF (Djibouti)</option>
+            <option class="country_options" value="DKK">Danish Krone - DKK (Denmark)</option>
+            <option class="country_options" value="DOP">Dominican Peso - DOP (Dominican Republic)</option>
+            <option class="country_options" value="DOT">DOT - DOT (International)</option>
+            <option class="country_options" value="DZD">Algerian Dinar - DZD (Algeria)</option>
+            <option class="country_options" value="EGP">Egyptian Pound - EGP (Egypt)</option>
+            <option class="country_options" value="ERN">Eritrean Nakfa - ERN (Eritrea)</option>
+            <option class="country_options" value="ETB">Ethiopian Birr - ETB (Ethiopia)</option>
+            <option class="country_options" value="ETH">Ether - ETH (International)</option>
+            <option class="country_options" value="EUR">Euro - EUR (European Union)</option>
+            <option class="country_options" value="FJD">Fijian Dollar - FJD (Fiji)</option>
+            <option class="country_options" value="FKP">Falkland Islands Pound - FKP (Falkland Islands)</option>
+            <option class="country_options" value="GBP">British Pound - GBP (United Kingdom)</option>
+            <option class="country_options" value="GEL">Georgian Lari - GEL (Georgia)</option>
+            <option class="country_options" value="GGP">Guernsey Pound - GGP (Guernsey)</option>
+            <option class="country_options" value="GHS">Ghanaian Cedi - GHS (Ghana)</option>
+            <option class="country_options" value="GIP">Gibraltar Pound - GIP (Gibraltar)</option>
+            <option class="country_options" value="GMD">Gambian Dalasi - GMD (Gambia)</option>
+            <option class="country_options" value="GNF">Guinean Franc - GNF (Guinea)</option>
+            <option class="country_options" value="GTQ">Guatemalan Quetzal - GTQ (Guatemala)</option>
+            <option class="country_options" value="GYD">Guyanese Dollar - GYD (Guyana)</option>
+            <option class="country_options" value="HKD">Hong Kong Dollar - HKD (Hong Kong)</option>
+            <option class="country_options" value="HNL">Honduran Lempira - HNL (Honduras)</option>
+            <option class="country_options" value="HRK">Croatian Kuna - HRK (Croatia)</option>
+            <option class="country_options" value="HTG">Haitian Gourde - HTG (Haiti)</option>
+            <option class="country_options" value="HUF">Hungarian Forint - HUF (Hungary)</option>
+            <option class="country_options" value="IDR">Indonesian Rupiah - IDR (Indonesia)</option>
+            <option class="country_options" value="ILS">Israeli New Shekel - ILS (Israel)</option>
+            <option class="country_options" value="IMP">Manx pound - IMP (Isle of Man)</option>
+            <option class="country_options" value="INR">Indian Rupee - INR (India)</option>
+            <option class="country_options" value="IQD">Iraqi Dinar - IQD (Iraq)</option>
+            <option class="country_options" value="IRR">Iranian Rial - IRR (Iran)</option>
+            <option class="country_options" value="ISK">Icelandic Króna - ISK (Iceland)</option>
+            <option class="country_options" value="JEP">Jersey Pound - JEP (Jersey)</option>
+            <option class="country_options" value="JMD">Jamaican Dollar - JMD (Jamaica)</option>
+            <option class="country_options" value="JOD">Jordanian Dinar - JOD (Jordan)</option>
+            <option class="country_options" value="JPY">Japanese Yen - JPY (Japan)</option>
+            <option class="country_options" value="KES">Kenyan Shilling - KES (Kenya)</option>
+            <option class="country_options" value="KGS">Kyrgyzstani Som - KGS (Kyrgyzstan)</option>
+            <option class="country_options" value="KHR">Cambodian Riel - KHR (Cambodia)</option>
+            <option class="country_options" value="KMF">Comorian Franc - KMF (Comoros)</option>
+            <option class="country_options" value="KPW">North Korean Won - KPW (North Korea)</option>
+            <option class="country_options" value="KRW">South Korean Won - KRW (South Korea)</option>
+            <option class="country_options" value="KWD">Kuwaiti Dinar - KWD (Kuwait)</option>
+            <option class="country_options" value="KYD">Cayman Islands Dollar - KYD (Cayman Islands)</option>
+            <option class="country_options" value="KZT">Kazakhstani Tenge - KZT (Kazakhstan)</option>
+            <option class="country_options" value="LAK">Laotian Kip - LAK (Laos)</option>
+            <option class="country_options" value="LBP">Lebanese Pound - LBP (Lebanon)</option>
+            <option class="country_options" value="LKR">Sri Lankan Rupee - LKR (Sri Lanka)</option>
+            <option class="country_options" value="LRD">Liberian Dollar - LRD (Liberia)</option>
+            <option class="country_options" value="LSL">Lesotho Loti - LSL (Lesotho)</option>
+            <option class="country_options" value="LTC">Litecoin - LTC (International)</option>
+            <option class="country_options" value="LTL">Lithuanian Litas - LTL (Lithuania)</option>
+            <option class="country_options" value="LVL">Latvian Lats - LVL (Latvia)</option>
+            <option class="country_options" value="LYD">Libyan Dinar - LYD (Libya)</option>
+            <option class="country_options" value="MAD">Moroccan Dirham - MAD (Morocco)</option>
+            <option class="country_options" value="MATIC">Polygon - MATIC (International)</option>
+            <option class="country_options" value="MDL">Moldovan Leu - MDL (Moldova)</option>
+            <option class="country_options" value="MGA">Malagasy Ariary - MGA (Madagascar)</option>
+            <option class="country_options" value="MKD">Macedonian Denar - MKD (North Macedonia)</option>
+            <option class="country_options" value="MMK">Myanmar Kyat - MMK (Myanmar)</option>
+            <option class="country_options" value="MNT">Mongolian Tugrik - MNT (Mongolia)</option>
+            <option class="country_options" value="MOP">Macanese Pataca - MOP (Macao SAR)</option>
+            <option class="country_options" value="MRO">Mauritanian Ouguiya - MRO (Mauritania)</option>
+            <option class="country_options" value="MRU">Mauritanian Ouguiya - MRU (Mauritania)</option>
+            <option class="country_options" value="MUR">Mauritian Rupee - MUR (Mauritius)</option>
+            <option class="country_options" value="MVR">Maldivian Rufiyaa - MVR (Maldives)</option>
+            <option class="country_options" value="MWK">Malawian Kwacha - MWK (Malawi)</option>
+            <option class="country_options" value="MXN">Mexican Peso - MXN (Mexico)</option>
+            <option class="country_options" value="MYR">Malaysian Ringgit - MYR (Malaysia)</option>
+            <option class="country_options" value="MZN">Mozambican Metical - MZN (Mozambique)</option>
+            <option class="country_options" value="NAD">Namibian Dollar - NAD (Namibia)</option>
+            <option class="country_options" value="NGN">Nigerian Naira - NGN (Nigeria)</option>
+            <option class="country_options" value="NIO">Nicaraguan Córdoba - NIO (Nicaragua)</option>
+            <option class="country_options" value="NOK">Norwegian Krone - NOK (Norway)</option>
+            <option class="country_options" value="NPR">Nepalese Rupee - NPR (Nepal)</option>
+            <option class="country_options" value="NZD">New Zealand Dollar - NZD (New Zealand)</option>
+            <option class="country_options" value="OMR">Omani Rial - OMR (Oman)</option>
+            <option class="country_options" value="OP">Optimism - OP (International)</option>
+            <option class="country_options" value="PAB">Panamanian Balboa - PAB (Panama)</option>
+            <option class="country_options" value="PEN">Peruvian Sol - PEN (Peru)</option>
+            <option class="country_options" value="PGK">Papua New Guinean Kina - PGK (Papua New Guinea)</option>
+            <option class="country_options" value="PHP">Philippine Peso - PHP (Philippines)</option>
+            <option class="country_options" value="PKR">Pakistani Rupee - PKR (Pakistan)</option>
+            <option class="country_options" value="PLN">Polish Zloty - PLN (Poland)</option>
+            <option class="country_options" value="PYG">Paraguayan Guarani - PYG (Paraguay)</option>
+            <option class="country_options" value="QAR">Qatari Rial - QAR (Qatar)</option>
+            <option class="country_options" value="RON">Romanian Leu - RON (Romania)</option>
+            <option class="country_options" value="RSD">Serbian Dinar - RSD (Serbia)</option>
+            <option class="country_options" value="RUB">Russian Ruble - RUB (Russia)</option>
+            <option class="country_options" value="RWF">Rwandan Franc - RWF (Rwanda)</option>
+            <option class="country_options" value="SAR">Saudi Riyal - SAR (Saudi Arabia)</option>
+            <option class="country_options" value="SBD">Solomon Islands Dollar - SBD (Solomon Islands)</option>
+            <option class="country_options" value="SCR">Seychellois Rupee - SCR (Seychelles)</option>
+            <option class="country_options" value="SDG">Sudanese Pound - SDG (Sudan)</option>
+            <option class="country_options" value="SEK">Swedish Krona - SEK (Sweden)</option>
+            <option class="country_options" value="SGD">Singapore Dollar - SGD (Singapore)</option>
+            <option class="country_options" value="SHP">Saint Helena Pound - SHP (Saint Helena)</option>
+            <option class="country_options" value="SLL">Sierra Leonean Leone - SLL (Sierra Leone)</option>
+            <option class="country_options" value="SOL">Solana - SOL (International)</option>
+            <option class="country_options" value="SOS">Somali Shilling - SOS (Somalia)</option>
+            <option class="country_options" value="SRD">Surinamese Dollar - SRD (Suriname)</option>
+            <option class="country_options" value="STD">São Tomé and Príncipe Dobra - STD (São Tomé and Príncipe)</option>
+            <option class="country_options" value="STN">São Tomé and Príncipe Dobra - STN (São Tomé and Príncipe)</option>
+            <option class="country_options" value="SVC">Salvadoran Colon - SVC (El Salvador)</option>
+            <option class="country_options" value="SYP">Syrian Pound - SYP (Syria)</option>
+            <option class="country_options" value="SZL">Swazi Lilangeni - SZL (Swaziland)</option>
+            <option class="country_options" value="THB">Thai Baht - THB (Thailand)</option>
+            <option class="country_options" value="TJS">Tajikistani Somoni - TJS (Tajikistan)</option>
+            <option class="country_options" value="TMT">Turkmenistani Manat - TMT (Turkmenistan)</option>
+            <option class="country_options" value="TND">Tunisian Dinar - TND (Tunisia)</option>
+            <option class="country_options" value="TOP">Tongan Pa'anga - TOP (Tonga)</option>
+            <option class="country_options" value="TRY">Turkish Lira - TRY (Turkey)</option>
+            <option class="country_options" value="TTD">Trinidad and Tobago Dollar - TTD (Trinidad and Tobago)</option>
+            <option class="country_options" value="TWD">New Taiwan Dollar - TWD (Taiwan)</option>
+            <option class="country_options" value="TZS">Tanzanian Shilling - TZS (Tanzania)</option>
+            <option class="country_options" value="UAH">Ukrainian Hryvnia - UAH (Ukraine)</option>
+            <option class="country_options" value="UGX">Ugandan Shilling - UGX (Uganda)</option>
+            <option class="country_options" value="USD">United States Dollar - USD (United States)</option>
+            <option class="country_options" value="USDC">USD Coin - USDC (International)</option>
+            <option class="country_options" value="USDT">Tether - USDT (International)</option>
+            <option class="country_options" value="UYU">Uruguayan Peso - UYU (Uruguay)</option>
+            <option class="country_options" value="UZS">Uzbekistani Som - UZS (Uzbekistan)</option>
+            <option class="country_options" value="VEF">Venezuelan Bolívar - VEF (Venezuela)</option>
+            <option class="country_options" value="VES">Venezuelan Bolívar Soberano - VES (Venezuela)</option>
+            <option class="country_options" value="VND">Vietnamese Dong - VND (Vietnam)</option>
+            <option class="country_options" value="VUV">Vanuatu Vatu - VUV (Vanuatu)</option>
+            <option class="country_options" value="WST">Samoan Tala - WST (Samoa)</option>
+            <option class="country_options" value="XAF">Central African CFA Franc - XAF (Central African Republic)</option>
+            <option class="country_options" value="XAG">Silver - XAG (International)</option>
+            <option class="country_options" value="XAU">Gold - XAU (International)</option>
+            <option class="country_options" value="XCD">Eastern Caribbean Dollar - XCD (Anguilla)</option>
+            <option class="country_options" value="XDR">Special Drawing Rights - XDR (International)</option>
+            <option class="country_options" value="XOF">West African CFA Franc - XOF (Benin)</option>
+            <option class="country_options" value="XPD">Palladium - XPD (International)</option>
+            <option class="country_options" value="XPF">CFP Franc - XPF (French Polynesia)</option>
+            <option class="country_options" value="XPT">Platinum - XPT (International)</option>
+            <option class="country_options" value="XRP">XRP - XRP (International)</option>
+            <option class="country_options" value="YER">Yemeni Rial - YER (Yemen)</option>
+            <option class="country_options" value="ZAR">South African Rand - ZAR (South Africa)</option>
+            <option class="country_options" value="ZMK">Zambian Kwacha (pre-2013) - ZMK (Zambia)</option>
+            <option class="country_options" value="ZMW">Zambian Kwacha - ZMW (Zambia)</option>
+            <option class="country_options" value="ZWL">Zimbabwean Dollar - ZWL (Zimbabwe)</option>
+        </select>
+        <br>
+        <div>
+            <input id="user_queryfrom" type="number" placeholder="Enter the amount">
+        </div>
+        <br>
+        <label for="country-currency">Select a country and its currency code:</label>
+        <select id="country-currency1">
+            <option class="country_options" value="">-- Select --</option>
+            <option class="country_options" value="ADA">Ada - ADA (Azerbaijan)</option>
+            <option class="country_options" value="AED">United Arab Emirates Dirham - AED (United Arab Emirates)</option>
+            <option class="country_options" value="AFN">Afghan Afghani - AFN (Afghanistan)</option>
+            <option class="country_options" value="ALL">Albanian Lek - ALL (Albania)</option>
+            <option class="country_options" value="AMD">Armenian Dram - AMD (Armenia)</option>
+            <option class="country_options" value="ANG">Netherlands Antillean Guilder - ANG (Netherlands Antilles)</option>
+            <option class="country_options" value="AOA">Angolan Kwanza - AOA (Angola)</option>
+            <option class="country_options" value="ARB">Argentine Peso - ARB (Argentina)</option>
+            <option class="country_options" value="ARS">Argentine Peso - ARS (Argentina)</option>
+            <option class="country_options" value="AUD">Australian Dollar - AUD (Australia)</option>
+            <option class="country_options" value="AVAX">AVAX - AVAX (International)</option>
+            <option class="country_options" value="AWG">Aruban Florin - AWG (Aruba)</option>
+            <option class="country_options" value="AZN">Azerbaijani Manat - AZN (Azerbaijan)</option>
+            <option class="country_options" value="BAM">Bosnia and Herzegovina Convertible Mark - BAM (Bosnia and Herzegovina)</option>
+            <option class="country_options" value="BBD">Barbadian Dollar - BBD (Barbados)</option>
+            <option class="country_options" value="BDT">Bangladeshi Taka - BDT (Bangladesh)</option>
+            <option class="country_options" value="BGN">Bulgarian Lev - BGN (Bulgaria)</option>
+            <option class="country_options" value="BHD">Bahraini Dinar - BHD (Bahrain)</option>
+            <option class="country_options" value="BIF">Burundian Franc - BIF (Burundi)</option>
+            <option class="country_options" value="BMD">Bermudan Dollar - BMD (Bermuda)</option>
+            <option class="country_options" value="BNB">BNB - BNB (International)</option>
+            <option class="country_options" value="BND">Brunei Dollar - BND (Brunei)</option>
+            <option class="country_options" value="BOB">Bolivian Boliviano - BOB (Bolivia)</option>
+            <option class="country_options" value="BRL">Brazilian Real - BRL (Brazil)</option>
+            <option class="country_options" value="BSD">Bahamian Dollar - BSD (Bahamas)</option>
+            <option class="country_options" value="BTC">Bitcoin - BTC (International)</option>
+            <option class="country_options" value="BTN">Bhutanese Ngultrum - BTN (Bhutan)</option>
+            <option class="country_options" value="BWP">Botswanan Pula - BWP (Botswana)</option>
+            <option class="country_options" value="BYN">Belarusian Ruble - BYN (Belarus)</option>
+            <option class="country_options" value="BYR">Belarusian Ruble - BYR (Belarus)</option>
+            <option class="country_options" value="BZD">Belize Dollar - BZD (Belize)</option>
+            <option class="country_options" value="CAD">Canadian Dollar - CAD (Canada)</option>
+            <option class="country_options" value="CDF">Congolese Franc - CDF (Democratic Republic of the Congo)</option>
+            <option class="country_options" value="CHF">Swiss Franc - CHF (Switzerland)</option>
+            <option class="country_options" value="CLF">Chilean Unit of Account UF - CLF (Chile)</option>
+            <option class="country_options" value="CLP">Chilean Peso - CLP (Chile)</option>
+            <option class="country_options" value="CNY">Chinese Yuan - CNY (China)</option>
+            <option class="country_options" value="COP">Colombian Peso - COP (Colombia)</option>
+            <option class="country_options" value="CRC">Costa Rican Colon - CRC (Costa Rica)</option>
+            <option class="country_options" value="CUC">Cuban Convertible Peso - CUC (Cuba)</option>
+            <option class="country_options" value="CUP">Cuban Peso - CUP (Cuba)</option>
+            <option class="country_options" value="CVE">Cape Verdean Escudo - CVE (Cape Verde)</option>
+            <option class="country_options" value="CZK">Czech Koruna - CZK (Czech Republic)</option>
+            <option class="country_options" value="DAI">DAI - DAI (International)</option>
+            <option class="country_options" value="DJF">Djiboutian Franc - DJF (Djibouti)</option>
+            <option class="country_options" value="DKK">Danish Krone - DKK (Denmark)</option>
+            <option class="country_options" value="DOP">Dominican Peso - DOP (Dominican Republic)</option>
+            <option class="country_options" value="DOT">DOT - DOT (International)</option>
+            <option class="country_options" value="DZD">Algerian Dinar - DZD (Algeria)</option>
+            <option class="country_options" value="EGP">Egyptian Pound - EGP (Egypt)</option>
+            <option class="country_options" value="ERN">Eritrean Nakfa - ERN (Eritrea)</option>
+            <option class="country_options" value="ETB">Ethiopian Birr - ETB (Ethiopia)</option>
+            <option class="country_options" value="ETH">Ether - ETH (International)</option>
+            <option class="country_options" value="EUR">Euro - EUR (European Union)</option>
+            <option class="country_options" value="FJD">Fijian Dollar - FJD (Fiji)</option>
+            <option class="country_options" value="FKP">Falkland Islands Pound - FKP (Falkland Islands)</option>
+            <option class="country_options" value="GBP">British Pound - GBP (United Kingdom)</option>
+            <option class="country_options" value="GEL">Georgian Lari - GEL (Georgia)</option>
+            <option class="country_options" value="GGP">Guernsey Pound - GGP (Guernsey)</option>
+            <option class="country_options" value="GHS">Ghanaian Cedi - GHS (Ghana)</option>
+            <option class="country_options" value="GIP">Gibraltar Pound - GIP (Gibraltar)</option>
+            <option class="country_options" value="GMD">Gambian Dalasi - GMD (Gambia)</option>
+            <option class="country_options" value="GNF">Guinean Franc - GNF (Guinea)</option>
+            <option class="country_options" value="GTQ">Guatemalan Quetzal - GTQ (Guatemala)</option>
+            <option class="country_options" value="GYD">Guyanese Dollar - GYD (Guyana)</option>
+            <option class="country_options" value="HKD">Hong Kong Dollar - HKD (Hong Kong)</option>
+            <option class="country_options" value="HNL">Honduran Lempira - HNL (Honduras)</option>
+            <option class="country_options" value="HRK">Croatian Kuna - HRK (Croatia)</option>
+            <option class="country_options" value="HTG">Haitian Gourde - HTG (Haiti)</option>
+            <option class="country_options" value="HUF">Hungarian Forint - HUF (Hungary)</option>
+            <option class="country_options" value="IDR">Indonesian Rupiah - IDR (Indonesia)</option>
+            <option class="country_options" value="ILS">Israeli New Shekel - ILS (Israel)</option>
+            <option class="country_options" value="IMP">Manx pound - IMP (Isle of Man)</option>
+            <option class="country_options" value="INR">Indian Rupee - INR (India)</option>
+            <option class="country_options" value="IQD">Iraqi Dinar - IQD (Iraq)</option>
+            <option class="country_options" value="IRR">Iranian Rial - IRR (Iran)</option>
+            <option class="country_options" value="ISK">Icelandic Króna - ISK (Iceland)</option>
+            <option class="country_options" value="JEP">Jersey Pound - JEP (Jersey)</option>
+            <option class="country_options" value="JMD">Jamaican Dollar - JMD (Jamaica)</option>
+            <option class="country_options" value="JOD">Jordanian Dinar - JOD (Jordan)</option>
+            <option class="country_options" value="JPY">Japanese Yen - JPY (Japan)</option>
+            <option class="country_options" value="KES">Kenyan Shilling - KES (Kenya)</option>
+            <option class="country_options" value="KGS">Kyrgyzstani Som - KGS (Kyrgyzstan)</option>
+            <option class="country_options" value="KHR">Cambodian Riel - KHR (Cambodia)</option>
+            <option class="country_options" value="KMF">Comorian Franc - KMF (Comoros)</option>
+            <option class="country_options" value="KPW">North Korean Won - KPW (North Korea)</option>
+            <option class="country_options" value="KRW">South Korean Won - KRW (South Korea)</option>
+            <option class="country_options" value="KWD">Kuwaiti Dinar - KWD (Kuwait)</option>
+            <option class="country_options" value="KYD">Cayman Islands Dollar - KYD (Cayman Islands)</option>
+            <option class="country_options" value="KZT">Kazakhstani Tenge - KZT (Kazakhstan)</option>
+            <option class="country_options" value="LAK">Laotian Kip - LAK (Laos)</option>
+            <option class="country_options" value="LBP">Lebanese Pound - LBP (Lebanon)</option>
+            <option class="country_options" value="LKR">Sri Lankan Rupee - LKR (Sri Lanka)</option>
+            <option class="country_options" value="LRD">Liberian Dollar - LRD (Liberia)</option>
+            <option class="country_options" value="LSL">Lesotho Loti - LSL (Lesotho)</option>
+            <option class="country_options" value="LTC">Litecoin - LTC (International)</option>
+            <option class="country_options" value="LTL">Lithuanian Litas - LTL (Lithuania)</option>
+            <option class="country_options" value="LVL">Latvian Lats - LVL (Latvia)</option>
+            <option class="country_options" value="LYD">Libyan Dinar - LYD (Libya)</option>
+            <option class="country_options" value="MAD">Moroccan Dirham - MAD (Morocco)</option>
+            <option class="country_options" value="MATIC">Polygon - MATIC (International)</option>
+            <option class="country_options" value="MDL">Moldovan Leu - MDL (Moldova)</option>
+            <option class="country_options" value="MGA">Malagasy Ariary - MGA (Madagascar)</option>
+            <option class="country_options" value="MKD">Macedonian Denar - MKD (North Macedonia)</option>
+            <option class="country_options" value="MMK">Myanmar Kyat - MMK (Myanmar)</option>
+            <option class="country_options" value="MNT">Mongolian Tugrik - MNT (Mongolia)</option>
+            <option class="country_options" value="MOP">Macanese Pataca - MOP (Macao SAR)</option>
+            <option class="country_options" value="MRO">Mauritanian Ouguiya - MRO (Mauritania)</option>
+            <option class="country_options" value="MRU">Mauritanian Ouguiya - MRU (Mauritania)</option>
+            <option class="country_options" value="MUR">Mauritian Rupee - MUR (Mauritius)</option>
+            <option class="country_options" value="MVR">Maldivian Rufiyaa - MVR (Maldives)</option>
+            <option class="country_options" value="MWK">Malawian Kwacha - MWK (Malawi)</option>
+            <option class="country_options" value="MXN">Mexican Peso - MXN (Mexico)</option>
+            <option class="country_options" value="MYR">Malaysian Ringgit - MYR (Malaysia)</option>
+            <option class="country_options" value="MZN">Mozambican Metical - MZN (Mozambique)</option>
+            <option class="country_options" value="NAD">Namibian Dollar - NAD (Namibia)</option>
+            <option class="country_options" value="NGN">Nigerian Naira - NGN (Nigeria)</option>
+            <option class="country_options" value="NIO">Nicaraguan Córdoba - NIO (Nicaragua)</option>
+            <option class="country_options" value="NOK">Norwegian Krone - NOK (Norway)</option>
+            <option class="country_options" value="NPR">Nepalese Rupee - NPR (Nepal)</option>
+            <option class="country_options" value="NZD">New Zealand Dollar - NZD (New Zealand)</option>
+            <option class="country_options" value="OMR">Omani Rial - OMR (Oman)</option>
+            <option class="country_options" value="OP">Optimism - OP (International)</option>
+            <option class="country_options" value="PAB">Panamanian Balboa - PAB (Panama)</option>
+            <option class="country_options" value="PEN">Peruvian Sol - PEN (Peru)</option>
+            <option class="country_options" value="PGK">Papua New Guinean Kina - PGK (Papua New Guinea)</option>
+            <option class="country_options" value="PHP">Philippine Peso - PHP (Philippines)</option>
+            <option class="country_options" value="PKR">Pakistani Rupee - PKR (Pakistan)</option>
+            <option class="country_options" value="PLN">Polish Zloty - PLN (Poland)</option>
+            <option class="country_options" value="PYG">Paraguayan Guarani - PYG (Paraguay)</option>
+            <option class="country_options" value="QAR">Qatari Rial - QAR (Qatar)</option>
+            <option class="country_options" value="RON">Romanian Leu - RON (Romania)</option>
+            <option class="country_options" value="RSD">Serbian Dinar - RSD (Serbia)</option>
+            <option class="country_options" value="RUB">Russian Ruble - RUB (Russia)</option>
+            <option class="country_options" value="RWF">Rwandan Franc - RWF (Rwanda)</option>
+            <option class="country_options" value="SAR">Saudi Riyal - SAR (Saudi Arabia)</option>
+            <option class="country_options" value="SBD">Solomon Islands Dollar - SBD (Solomon Islands)</option>
+            <option class="country_options" value="SCR">Seychellois Rupee - SCR (Seychelles)</option>
+            <option class="country_options" value="SDG">Sudanese Pound - SDG (Sudan)</option>
+            <option class="country_options" value="SEK">Swedish Krona - SEK (Sweden)</option>
+            <option class="country_options" value="SGD">Singapore Dollar - SGD (Singapore)</option>
+            <option class="country_options" value="SHP">Saint Helena Pound - SHP (Saint Helena)</option>
+            <option class="country_options" value="SLL">Sierra Leonean Leone - SLL (Sierra Leone)</option>
+            <option class="country_options" value="SOL">Solana - SOL (International)</option>
+            <option class="country_options" value="SOS">Somali Shilling - SOS (Somalia)</option>
+            <option class="country_options" value="SRD">Surinamese Dollar - SRD (Suriname)</option>
+            <option class="country_options" value="STD">São Tomé and Príncipe Dobra - STD (São Tomé and Príncipe)</option>
+            <option class="country_options" value="STN">São Tomé and Príncipe Dobra - STN (São Tomé and Príncipe)</option>
+            <option class="country_options" value="SVC">Salvadoran Colon - SVC (El Salvador)</option>
+            <option class="country_options" value="SYP">Syrian Pound - SYP (Syria)</option>
+            <option class="country_options" value="SZL">Swazi Lilangeni - SZL (Swaziland)</option>
+            <option class="country_options" value="THB">Thai Baht - THB (Thailand)</option>
+            <option class="country_options" value="TJS">Tajikistani Somoni - TJS (Tajikistan)</option>
+            <option class="country_options" value="TMT">Turkmenistani Manat - TMT (Turkmenistan)</option>
+            <option class="country_options" value="TND">Tunisian Dinar - TND (Tunisia)</option>
+            <option class="country_options" value="TOP">Tongan Pa'anga - TOP (Tonga)</option>
+            <option class="country_options" value="TRY">Turkish Lira - TRY (Turkey)</option>
+            <option class="country_options" value="TTD">Trinidad and Tobago Dollar - TTD (Trinidad and Tobago)</option>
+            <option class="country_options" value="TWD">New Taiwan Dollar - TWD (Taiwan)</option>
+            <option class="country_options" value="TZS">Tanzanian Shilling - TZS (Tanzania)</option>
+            <option class="country_options" value="UAH">Ukrainian Hryvnia - UAH (Ukraine)</option>
+            <option class="country_options" value="UGX">Ugandan Shilling - UGX (Uganda)</option>
+            <option class="country_options" value="USD">United States Dollar - USD (United States)</option>
+            <option class="country_options" value="USDC">USD Coin - USDC (International)</option>
+            <option class="country_options" value="USDT">Tether - USDT (International)</option>
+            <option class="country_options" value="UYU">Uruguayan Peso - UYU (Uruguay)</option>
+            <option class="country_options" value="UZS">Uzbekistani Som - UZS (Uzbekistan)</option>
+            <option class="country_options" value="VEF">Venezuelan Bolívar - VEF (Venezuela)</option>
+            <option class="country_options" value="VES">Venezuelan Bolívar Soberano - VES (Venezuela)</option>
+            <option class="country_options" value="VND">Vietnamese Dong - VND (Vietnam)</option>
+            <option class="country_options" value="VUV">Vanuatu Vatu - VUV (Vanuatu)</option>
+            <option class="country_options" value="WST">Samoan Tala - WST (Samoa)</option>
+            <option class="country_options" value="XAF">Central African CFA Franc - XAF (Central African Republic)</option>
+            <option class="country_options" value="XAG">Silver - XAG (International)</option>
+            <option class="country_options" value="XAU">Gold - XAU (International)</option>
+            <option class="country_options" value="XCD">Eastern Caribbean Dollar - XCD (Anguilla)</option>
+            <option class="country_options" value="XDR">Special Drawing Rights - XDR (International)</option>
+            <option class="country_options" value="XOF">West African CFA Franc - XOF (Benin)</option>
+            <option class="country_options" value="XPD">Palladium - XPD (International)</option>
+            <option class="country_options" value="XPF">CFP Franc - XPF (French Polynesia)</option>
+            <option class="country_options" value="XPT">Platinum - XPT (International)</option>
+            <option class="country_options" value="XRP">XRP - XRP (International)</option>
+            <option class="country_options" value="YER">Yemeni Rial - YER (Yemen)</option>
+            <option class="country_options" value="ZAR">South African Rand - ZAR (South Africa)</option>
+            <option class="country_options" value="ZMK">Zambian Kwacha (pre-2013) - ZMK (Zambia)</option>
+            <option class="country_options" value="ZMW">Zambian Kwacha - ZMW (Zambia)</option>
+            <option class="country_options" value="ZWL">Zimbabwean Dollar - ZWL (Zimbabwe)</option>
+        </select>
+        <div>
+            <input id="user_queryto" type="number" placeholder="Enter the amount">
+        </div>
+        <div id="user_query_sender">Convert</div>
+    </div>
+</div>
+<div id="output_currency">
+    <h1>Converted value</h1>
+    <div id="output_conversion">
+        <div class="user_opt">
+            <p id="option1"></p>
+            <p id="desc1"></p>
+        </div>
+        <div class="user_opt">
+            <p id="option2"></p>
+            <p id="desc2"></p>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,62 @@
+:root{
+    --primary : #FFBE98;
+    --secondary : #F7DED0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#user_main_ui{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://source.unsplash.com/random');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+#bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(1px);
+    background: none;
+    height: 100vh;
+    padding: 10px;
+    width: 100vw;
+}
+#quote_day{
+    background-color: var(--secondary);
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px #E2BFB3;
+}
+#qoute_head{
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+#user_ui{
+    padding: 10px;
+    font-size: 30px;
+}
+.quoute_sign{
+    font-size: 80px;
+    color: #643843;
+    display: block;
+}
+.quote_icon{
+    height: 80px;
+}
+#left{
+    text-align: left;
+}
+#right{
+    text-align: right;
+}
