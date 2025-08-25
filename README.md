@@ -10,7 +10,6 @@
 [![Last Commit](https://img.shields.io/github/last-commit/arshc0der/Javscript-Mini-Projects)](https://github.com/arshc0der/Javscript-Mini-Projects/commits/main)
 [![Maintained](https://img.shields.io/maintenance/yes/2025)](https://github.com/arshc0der/Javscript-Mini-Projects)
 [![Made With](https://img.shields.io/badge/Made%20With-JavaScript-yellow)](https://github.com/arshc0der/Javscript-Mini-Projects)
-[![Backend](https://img.shields.io/badge/Backend-Firebase-orange)](https://firebase.google.com/)
 [![Style](https://img.shields.io/badge/Style-TailwindCSS-blue)](https://tailwindcss.com/)
 [![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)]()
 [![Status](https://img.shields.io/badge/Project-Complete-success)]()
