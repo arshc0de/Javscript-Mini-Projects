@@ -1,4 +1,3 @@
-
 # 🚀 JavaScript Mini Projects
 
 > **Beginner-Friendly Projects to Boost Your JavaScript Skills**
